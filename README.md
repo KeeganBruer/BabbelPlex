@@ -5,10 +5,13 @@ An OpenSource Media Server aimed towards books. Everything a bibliophile might w
 ## Stages 
 ### 1 - Media Server Base
 First, building a base that is able to serve content to readers.
+
 [Media Server](./MediaServer/README.md)
 
 ### 2 - Mobile Apps & Monitization
 Second, provide mobile apps that allow people access to their media servers. 
+- [Account Server](./AccountServer/README.md)
+- [Expo App](./ExpoApp/README.md)
 
 <br></br>
 ## Monitization
