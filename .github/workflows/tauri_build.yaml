@@ -55,7 +55,7 @@ jobs:
       - name: install frontend dependencies
         run: |
           cd ./MediaServer/TauriApp
-          npm install
+          pnpm install
           ls
 
       - uses: tauri-apps/tauri-action@v0
