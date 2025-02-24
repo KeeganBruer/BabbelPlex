@@ -51,6 +51,11 @@ jobs:
         run: |
           cd ./MediaServer/TauriApp
           npm install
+      
+      - name: check directory
+        run: |
+          ls
+          dir
 
       - uses: tauri-apps/tauri-action@v0
         env:
