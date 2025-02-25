@@ -6,7 +6,8 @@ import "./App.css";
 function App() {
   useEffect(() => {
     (async () => {
-      await invoke("start_server", {})
+      let res = await invoke("start_server", {});
+      console.log("cmd res", res)
     })()
   }, [])
   const [greetMsg, setGreetMsg] = useState("");
