@@ -14,6 +14,6 @@ if (!targetTriple) {
 }
 
 fs.renameSync(
-  `./server/server${ext}`,
-  `./src-tauri/binaries/app-${targetTriple}${ext}`
+  `./server${ext}`,
+  `../src-tauri/binaries/app-${targetTriple}${ext}`
 );
