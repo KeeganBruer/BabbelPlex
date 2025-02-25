@@ -3,7 +3,8 @@ import fs from 'fs';
 
 
 
-const Ha = execSync('npx tsc', { cwd:process.cwd()+"/server", stdio:"pipe"});
+const Ha = execSync('npm install', { cwd:process.cwd()+"/server", stdio:"pipe"});
+const Ha1 = execSync('npx tsc', { cwd:process.cwd()+"/server", stdio:"pipe"});
 const Ha2 = execSync('npx pkg .', { cwd:process.cwd()+"/server", stdio:"pipe"});
 
 const ext = process.platform === 'win32' ? '.exe' : '';
