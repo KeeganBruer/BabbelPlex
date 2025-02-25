@@ -16,9 +16,6 @@
     "assets": [
       "node_modules/**"
     ],
-    "targets": [
-      "node*-win-x64"
-    ],
     "output": "app"
   }
 }
