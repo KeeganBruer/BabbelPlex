@@ -16,6 +16,9 @@
     "assets": [
       "node_modules/**"
     ],
+    "targets": [
+      "node*-linux-arm64", "node*-macos-arm64","node*-win-arm64"
+    ],
     "output": "app"
   }
 }
