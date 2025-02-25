@@ -1,1 +1,1 @@
-console.log("hi", __dirname, process.cwd());
+console.log("hi");
