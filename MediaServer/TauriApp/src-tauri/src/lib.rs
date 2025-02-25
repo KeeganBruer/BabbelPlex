@@ -4,6 +4,17 @@ fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
 }
 
+#[tauri::command]
+async fn start_server(app: tauri::AppHandle) -> String {
+  let sidecar_command = app
+    .shell()
+    .sidecar("app")
+    .unwrap()
+  let output = sidecar_command.output().unwrap();
+  let response = String::from_utf8(output.stdout).unwrap();
+  response
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
