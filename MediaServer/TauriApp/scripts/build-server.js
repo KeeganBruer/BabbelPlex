@@ -3,8 +3,8 @@ import fs from 'fs';
 
 
 
-const Ha = execSync('cd server && npx tsc');
-const Ha2 = execSync('cd server && npx pkg .');
+const Ha = execSync('cd server && npx tsc', { stdio:"pipe"});
+const Ha2 = execSync('cd server && npx pkg .', { stdio:"pipe"});
 
 const ext = process.platform === 'win32' ? '.exe' : '';
 
