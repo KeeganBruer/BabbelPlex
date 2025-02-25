@@ -5,6 +5,8 @@
   "main": "index.js",
   "bin": "./dist/index.js",
   "scripts": {
+    "copy-file":"node ./scripts/build-server.js",
+    "build":"npm install && tsc && pkg . && npm run copy-file",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

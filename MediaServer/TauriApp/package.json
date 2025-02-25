@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build-server":"node ./scripts/build-server.js",
+    "build-server":"cd server && npm run build",
     "build": "tsc && npm run build-server && vite build",
     "preview": "vite preview",
     "tauri": "tauri"
